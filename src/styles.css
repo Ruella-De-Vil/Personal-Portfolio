@@ -41,7 +41,7 @@ h2 {
 h3 {
     font-size: 2.5em;
     color: var(--bubble-gum-pink);
-    margin: 0 15rem 4rem;
+    margin: 0 15rem 7.5rem;
     text-align: right;
 }
 
@@ -56,3 +56,33 @@ border: 1px solid var(--reborn-beige);
 a:hover {
     color: var(--reborn-beige);
 }
+
+.projects {
+    margin-top: 7.5rem;
+}
+
+h4 {
+    padding: 1rem;
+    font-size: 2em;
+    font-weight: 100;
+    margin: 0 auto 5rem;
+    color: var(--reborn-beige);
+}
+
+.weather-app-img {
+    width: 100%;
+    height: auto;
+}
+
+h5 {
+    font-size: 1.5rem;
+    font-family: "Merienda", cursive;
+    font-weight: 500;
+    color: var(--midnight-blue);
+}
+
+p {
+    font-size: 1.2rem;
+    color: var(--glam-silver);
+}
+

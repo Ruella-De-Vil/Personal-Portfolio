@@ -34,6 +34,20 @@ text-align: center;
 margin-bottom: 3rem;
 }
 
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--reborn-beige);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--ebony-black);
+    padding: 1em;
+}
+
+
 .icon {
     color: var(--reborn-beige);
 }
@@ -80,7 +94,7 @@ width: 6.5em;
     color: var(--reborn-beige);
 }
 
-.projects {
+.projects-section, .about-section {
     margin: 5em 5em;
     padding: 4em;
 }

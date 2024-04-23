@@ -45,7 +45,7 @@ h3 {
     text-align: right;
 }
 
-a {
+.contact-link {
 text-decoration: none;
 color: var(--bubble-gum-pink);
 font-size: 1.5em;
@@ -53,36 +53,61 @@ padding: 0.5em;
 border: 1px solid var(--reborn-beige);
 }
 
-a:hover {
+.contact-link:hover {
     color: var(--reborn-beige);
 }
 
 .projects {
-    margin-top: 7.5rem;
+    margin: 5em 5em;
+    padding: 4em;
+}
+
+.app-descr {
+    max-width: 400px;
+    min-width: 250px;
+    height: auto;
+    margin: auto;
 }
 
 h4 {
     padding: 1rem;
     font-size: 2em;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0 auto 5rem;
     color: var(--reborn-beige);
+    text-decoration: underline;
 }
 
 .weather-app-img {
-    width: 100%;
+    max-width: 400px;
+    min-width: 250px;
     height: auto;
+    margin: auto;
 }
 
 h5 {
     font-size: 1.5rem;
     font-family: "Merienda", cursive;
     font-weight: 500;
-    color: var(--midnight-blue);
+    color: var(--bubble-gum-pink);
 }
 
-p {
+.project-description {
     font-size: 1.2rem;
     color: var(--glam-silver);
+}
+
+.skills {
+    text-align: center;
+    color: var(--bubble-gum-pink);
+}
+
+img {
+    transition: 1s;
+}
+
+img:hover {
+    box-shadow: 0 0 20px var(--reborn-beige);
+    transition: 1s;
 }
 

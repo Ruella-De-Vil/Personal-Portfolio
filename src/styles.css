@@ -65,15 +65,18 @@ h3 {
     text-align: right;
 }
 
-.contact-link {
+.contact-link, .about-link {
 text-decoration: none;
 color: var(--bubble-gum-pink);
 font-size: 1.5em;
 padding: 0.5em;
+margin: 0 15px;
 border: 1px solid var(--reborn-beige);
+display: inline-block;
+width: 6.5em;
 }
 
-.contact-link:hover {
+.contact-link:hover, .about-link:hover {
     color: var(--reborn-beige);
 }
 
@@ -91,11 +94,12 @@ border: 1px solid var(--reborn-beige);
 
 h4 {
     padding: 1rem;
-    font-size:2em;
+    font-size:3em;
     font-weight: 300; 
     margin: 0 auto 5rem;
-    color: var(--reborn-beige);
+    color: var(--midnight-blue);
     text-decoration: underline;
+    text-shadow: 3px 2.5px var(--glam-silver);
 }
 
 .weather-app-img {
@@ -123,11 +127,11 @@ h5 {
 }
 
 img {
-    transition: 1s;
+    transition: 0.5s;
 }
 
 img:hover {
-    box-shadow: 0 0 20px var(--reborn-beige);
-    transition: 1s;
+    box-shadow: 0 0 5px var(--bubble-gum-pink);
+    transition: 0.5s;
 }
 

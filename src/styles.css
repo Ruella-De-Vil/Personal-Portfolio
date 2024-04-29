@@ -130,7 +130,7 @@ h5 {
     color: var(--bubble-gum-pink);
 }
 
-.project-description {
+.project-description, .about-description {
     font-size: 1.2rem;
     color: var(--glam-silver);
 }
@@ -149,3 +149,48 @@ img:hover {
     transition: 0.5s;
 }
 
+
+.bg-images {
+    position: relative;
+    bottom: 100rem;
+    z-index: -99;
+}
+
+.square-1 {
+    height: 30em;
+    width: 30em;
+    border: 1px solid var(--tangerine-orange);
+    background-color: var(--ebony-black);
+    margin: 10em auto;
+    transform: rotate(40deg);
+    z-index: -5;
+    position: relative;
+    left: -30em;
+    bottom: 30em;
+}
+
+.square-2 {
+    height: 40em;
+    width: 40em;
+    border: 1px solid var(--tangerine-orange);
+    background-color: var(--ebony-black);
+    margin: auto;
+    transform: rotate(20deg);
+    z-index: -7;
+    position: relative;
+    left: 20em;
+    bottom: 20em;
+}
+
+.square-3 {
+    height: 35em;
+    width: 35em;
+    border: 1px solid var(--tangerine-orange);
+    background-color: var(--ebony-black);
+    margin: auto;
+    transform: rotate(65deg);
+    z-index: -9;
+    position: relative;
+    left: -20em;
+    bottom: 20em;
+}

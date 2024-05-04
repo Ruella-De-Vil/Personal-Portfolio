@@ -251,3 +251,15 @@ img:hover {
         color: var(--reborn-beige);
     }
     
+    .icon:hover {
+        color: var(--tangerine-orange);
+    }
+
+.footer-link {
+    opacity: 0.5;
+    color: var(--bubble-gum-pink);
+}
+
+.footer-link:hover {
+    color: var(--reborn-beige);
+}

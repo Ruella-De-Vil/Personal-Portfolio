@@ -49,7 +49,6 @@ body::-webkit-scrollbar-thumb {
 
 main {
     overflow: hidden;
-    margin-bottom: -500rem;
 }
 
 .icon {
@@ -242,7 +241,7 @@ img:hover {
     color: var(--bubble-gum-pink);
     font-size: 1.5em;
     padding: 0.5em;
-    margin: 2em;
+    margin: 1.5em;
     border: 1px solid var(--reborn-beige);
     display: inline-block;
     width: 12em;
@@ -251,3 +250,4 @@ img:hover {
     .email-btn:hover {
         color: var(--reborn-beige);
     }
+    

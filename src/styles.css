@@ -134,7 +134,7 @@ h5 {
     color: var(--bubble-gum-pink);
 }
 
-.project-description, .about-description {
+.project-description, .about-description, .contact-description {
     font-size: 1.2rem;
     color: var(--glam-silver);
 }
@@ -236,3 +236,18 @@ img:hover {
     top: -40rem;
     left: -35rem;
 }
+
+.email-btn {
+    text-decoration: none;
+    color: var(--bubble-gum-pink);
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 2em;
+    border: 1px solid var(--reborn-beige);
+    display: inline-block;
+    width: 12em;
+    }
+    
+    .email-btn:hover {
+        color: var(--reborn-beige);
+    }

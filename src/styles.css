@@ -25,7 +25,7 @@ background-color: var(--ebony-black);
 
 .navbar-toggler {
     background-color: var(--reborn-beige);
-    opacity: 50%;
+    opacity: 80%;
 }
 
 body {
@@ -67,7 +67,6 @@ h2 {
     color: var(--glam-silver);
     margin: 0 auto 1rem;
     text-align: center;
-    font-family: "Merienda", cursive;
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
@@ -146,11 +145,13 @@ h5 {
 
 img {
     transition: 0.5s;
+    border: 0.2em solid var(--tangerine-orange);
+    filter: sepia(25%);
 }
 
 img:hover {
-    box-shadow: 0 0 5px var(--bubble-gum-pink);
     transition: 0.5s;
+    filter: initial;
 }
 
 
@@ -351,6 +352,7 @@ img:hover {
         
         h5 {
             font-size: 1.2rem;
+            padding-top: 1em;
         }
 
         .email-btn {

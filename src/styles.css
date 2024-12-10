@@ -5,6 +5,8 @@
     --bubble-gum-pink: #E8B4C2;
     --tangerine-orange: #FF7913;
     --ebony-black: #080402;
+
+    --tangerine-orange-rgb: 255, 121, 19;
     }
     
 .navbar {
@@ -13,10 +15,11 @@ background-color: var(--ebony-black);
 
 .navbar-brand, .nav-link{
     color: var(--reborn-beige);
-    font-family: "Merienda", cursive;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "Bungee Shade", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.2em;
 }
 
 .navbar-brand:hover, .nav-link:hover {
@@ -29,9 +32,10 @@ background-color: var(--ebony-black);
 }
 
 body {
-background-color: var(--ebony-black);
-text-align: center;
-margin-bottom: 3rem;
+    background-color: var(--ebony-black);
+    text-align: center;
+    margin-bottom: 3rem;
+    font-family: "Metrophobic", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -55,6 +59,12 @@ main {
     color: var(--reborn-beige);
 }
 
+h1 .icon {
+    color: var(--reborn-beige);
+    box-shadow: -10px -10px 0 -5px var(--tangerine-orange);
+    padding: 0.75em 0 0 0.75em;
+}
+
 h1 {
     font-size: 2.5em;
     color: var(--bubble-gum-pink);
@@ -63,14 +73,23 @@ h1 {
 }
 
 h2 {
+    font-family: "Bungee Shade", sans-serif;
     font-size: 8.5em;
-    color: var(--glam-silver);
+    color: var(--reborn-beige);
     margin: 0 auto 1rem;
     text-align: center;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 100;
     font-style: normal;
+    letter-spacing: 0.025em;
     text-shadow: 6px 6px var(--midnight-blue);
+}
+
+h2 span {
+    box-shadow: 7px 7px var(--tangerine-orange);
+    padding-bottom: 1em;
+    padding-right: 0.75em;
+    margin-right: -0.75em;
 }
 
 
@@ -82,14 +101,14 @@ h3 {
 }
 
 .contact-link, .about-link {
-text-decoration: none;
-color: var(--bubble-gum-pink);
-font-size: 1.5em;
-padding: 0.5em;
-margin: 0 15px;
-border: 1px solid var(--reborn-beige);
-display: inline-block;
-width: 6.5em;
+    text-decoration: none;
+    color: var(--bubble-gum-pink);
+    font-size: 1.5em;
+    padding: 0.5em;
+    margin: 3em 1em 0;
+    border: 1px solid var(--reborn-beige);
+    display: inline-block;
+    width: 6.5em;
 }
 
 .contact-link:hover, .about-link:hover {
@@ -109,133 +128,50 @@ width: 6.5em;
     text-align: center;
 }
 
+.project-description {
+    text-align: justify;
+}
+
 h4 {
     padding: 1rem;
+    font-family: "Bungee Shade", sans-serif;
     font-size:3em;
-    font-weight: 300; 
+    font-weight: 100; 
     margin: 0 auto 5rem;
-    color: var(--midnight-blue);
-    text-decoration: underline;
-    text-shadow: 3px 2.5px var(--glam-silver);
+    color: var(--glam-silver);
 }
 
 .weather-app-img {
     max-width: 400px;
     min-width: 250px;
-    height: auto;
+    height: 25em;
     margin: auto;
+    margin-bottom: 1em;
+    box-shadow: -7px 7px var(--tangerine-orange);
+    padding: 2em;
+    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
+    overflow: hidden;
 }
 
 h5 {
     font-size: 1.5rem;
-    font-family: "Merienda", cursive;
-    font-weight: 400;
-    color: var(--bubble-gum-pink);
+    font-weight: 500;
+    color: var(--tangerine-orange);
+    font-family: "Bungee Shade", sans-serif;
 }
 
 .project-description, .about-description, .contact-description {
     font-size: 1.2rem;
-    color: var(--glam-silver);
+    color: var(--bubble-gum-pink);
+}
+
+.about-description strong {
+    color: var(--tangerine-orange);
 }
 
 .skills {
     text-align: center;
-    color: var(--bubble-gum-pink);
-}
-
-img {
-    transition: 0.5s;
-    border: 0.2em solid var(--tangerine-orange);
-    filter: sepia(25%);
-}
-
-img:hover {
-    transition: 0.5s;
-    filter: initial;
-}
-
-
-.bg-images {
-    position: relative;
-    z-index: -99;
-    height: 0;
-    width: 0;
-}
-
-.square-1 {
-    height: 30em;
-    width: 30em;
-    border: 1px solid var(--tangerine-orange);
-    background-color: var(--ebony-black);
-    margin: 10em auto;
-    transform: rotate(40deg);
-    z-index: -5;
-    position: absolute;
-    top: -200rem;
-}
-
-.square-2 {
-    height: 40em;
-    width: 40em;
-    border: 1px solid var(--tangerine-orange);
-    background-color: var(--ebony-black);
-    margin: auto;
-    transform: rotate(20deg);
-    z-index: -7;
-    position: absolute;
-    top: -160rem;
-    left: 5rem;
-}
-
-.square-3 {
-    height: 35em;
-    width: 35em;
-    border: 1px solid var(--tangerine-orange);
-    background-color: var(--ebony-black);
-    margin: auto;
-    transform: rotate(65deg);
-    z-index: -9;
-    position: absolute;
-    top: -130rem;
-}
-
-.square-4 {
-    height: 30em;
-    width: 30em;
-    border: 1px solid var(--tangerine-orange);
-    background-color: var(--ebony-black);
-    margin: 10em auto;
-    transform: rotate(40deg);
-    z-index: -5;
-    position: absolute;
-    top: -110rem;
-    left: -30rem;
-}
-
-.square-5 {
-    height: 40em;
-    width: 40em;
-    border: 1px solid var(--tangerine-orange);
-    background-color: var(--ebony-black);
-    margin: auto;
-    transform: rotate(20deg);
-    z-index: -7;
-    position: absolute;
-    top: -80rem;
-    left: -5rem;
-}
-
-.square-6 {
-    height: 35em;
-    width: 35em;
-    border: 1px solid var(--tangerine-orange);
-    background-color: var(--ebony-black);
-    margin: auto;
-    transform: rotate(65deg);
-    z-index: -9;
-    position: absolute;
-    top: -40rem;
-    left: -35rem;
+    color: var(--tangerine-orange);
 }
 
 .email-btn {
@@ -257,14 +193,14 @@ img:hover {
         color: var(--tangerine-orange);
     }
 
-.footer-link {
-    opacity: 0.5;
-    color: var(--bubble-gum-pink);
-}
+    .footer-link {
+        opacity: 0.5;
+        color: var(--bubble-gum-pink);
+    }
 
-.footer-link:hover {
-    color: var(--reborn-beige);
-}
+    .footer-link:hover {
+        color: var(--reborn-beige);
+    }
 
 @media screen and (max-width: 350px) {
     h1 {
@@ -303,13 +239,13 @@ img:hover {
         min-width: 225px;          
     }
         
-        h5 {
-            font-size: 1.2rem;
-        }
+    h5 {
+        font-size: 1.2rem;
+    }
 
-        .email-btn {
-            font-size: 1.2em;
-            }
+    .email-btn {
+        font-size: 1.2em;
+    }
 }
 
 

@@ -120,11 +120,25 @@ h3 {
     padding: 4em;
 }
 
+.projects {
+    margin: auto;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 2em;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1 p1 p2 p2 p2"
+    "p1 p1 p2 p2 p2"
+    "p3 p3 p3 p4 p4"
+    "p3 p3 p3 p4 p4";
+    margin-bottom: -14em; ;
+}
+
 .app-descr {
     max-width: 400px;
     min-width: 250px;
-    height: auto;
-    margin: auto;
+    margin: 0.5em;
     text-align: center;
 }
 
@@ -141,17 +155,95 @@ h4 {
     color: var(--glam-silver);
 }
 
+.project-1 {
+    grid-area: p1;
+    width: fit-content;
+    position: relative;
+    left: 6em;
+}
+
 .weather-app-img {
     max-width: 400px;
     min-width: 250px;
-    height: 25em;
-    margin: auto;
+    height: 20em;
+    margin: 0;
     margin-bottom: 1em;
     box-shadow: -7px 7px var(--tangerine-orange);
     padding: 2em;
     background-color: rgba(var(--tangerine-orange-rgb), 0.05);
     overflow: hidden;
 }
+
+.project-2 {
+    grid-area: p2;
+    display: flex;
+    height: fit-content;
+}
+
+.mortgage-cal-img {
+    max-width: 400px;
+    min-width: 250px;
+    height: 20em;
+    margin: 0;
+    margin-bottom: 1em;
+    box-shadow: -7px 7px var(--tangerine-orange);
+    padding: 2em;
+    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
+    overflow: hidden;
+}
+.project-2 .app-descr {
+    margin: 1em auto;
+}
+
+.project-3 {
+    grid-area: p3;
+    display: flex;
+    height: fit-content;
+    position: relative;
+    top: 3em;
+}
+
+.dessert-shopping-cart-img {
+    max-width: 400px;
+    min-width: 250px;
+    height: 20em;
+    margin: 0;
+    margin-bottom: 1em;
+    box-shadow: -7px 7px var(--tangerine-orange);
+    padding: 2em;
+    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
+    overflow: hidden;
+}
+.project-3 .app-descr {
+    margin: auto;
+}
+
+.project-4 {
+    grid-area: p4;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    top: -12em;
+    left: 3em;
+}
+
+.bento-display-img {
+    max-width: 400px;
+    min-width: 250px;
+    height: 20em;
+    margin: 0;
+    margin-bottom: 1em;
+    box-shadow: -7px 7px var(--tangerine-orange);
+    padding: 2em;
+    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
+    overflow: hidden;
+}
+.project-3 .app-descr {
+    margin: 1em auto;
+}
+
 
 h5 {
     font-size: 1.5rem;
@@ -163,6 +255,23 @@ h5 {
 .project-description, .about-description, .contact-description {
     font-size: 1.2rem;
     color: var(--bubble-gum-pink);
+}
+
+.about-section-corner {
+    position: absolute;
+    left: 72em;
+    width: 35em;
+    height: 20em;
+    box-shadow: 10px -10px 0 -5px var(--tangerine-orange);
+}
+
+.skills-corner {
+    position: absolute;
+    top: 157em;
+    left: 5em;
+    width: 15em;
+    height: 20em;
+    box-shadow: -10px 10px 0 -5px var(--tangerine-orange);
 }
 
 .about-description strong {
@@ -193,6 +302,16 @@ h5 {
         color: var(--tangerine-orange);
     }
 
+    .contact-box {
+        position: absolute;
+        top: 185em;
+        left: 60em;
+        width: 12em;
+        height: 38em;
+        box-shadow: 10px 10px 0 -5px var(--tangerine-orange),
+                    10px -10px 0 -5px var(--tangerine-orange);
+    }
+
     .footer-link {
         opacity: 0.5;
         color: var(--bubble-gum-pink);
@@ -200,6 +319,11 @@ h5 {
 
     .footer-link:hover {
         color: var(--reborn-beige);
+    }
+
+    article {
+        justify-content: center;
+        align-items: center;
     }
 
 @media screen and (max-width: 350px) {

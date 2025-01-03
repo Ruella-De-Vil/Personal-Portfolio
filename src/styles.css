@@ -8,9 +8,14 @@
 
     --tangerine-orange-rgb: 255, 121, 19;
     }
+
+ /* * {
+    box-sizing: border-box;
+    background-color: rgba(31, 112, 20, 0.274) !important;
+} */
     
 .navbar {
-background-color: var(--ebony-black);
+    background-color: var(--ebony-black);
 }
 
 .navbar-brand, .nav-link{
@@ -34,7 +39,7 @@ background-color: var(--ebony-black);
 body {
     background-color: var(--ebony-black);
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 3em;
     font-family: "Metrophobic", sans-serif;
 }
 
@@ -53,6 +58,7 @@ body::-webkit-scrollbar-thumb {
 
 main {
     overflow: hidden;
+    margin: auto;
 }
 
 .icon {
@@ -85,19 +91,15 @@ h2 {
     text-shadow: 6px 6px var(--midnight-blue);
 }
 
-h2 span {
-    box-shadow: 7px 7px var(--tangerine-orange);
-    padding-bottom: 1em;
-    padding-right: 0.75em;
-    margin-right: -0.75em;
-}
-
-
 h3 {
     font-size: 2.5em;
     color: var(--bubble-gum-pink);
-    margin: 0 15rem 7.5rem;
+    width: fit-content;
     text-align: right;
+    justify-self: end;
+    box-shadow: 7px 7px var(--tangerine-orange);
+    margin: 1em 6em 2em 0;
+    padding: 0 1em 1em 0;
 }
 
 .contact-link, .about-link {
@@ -121,6 +123,7 @@ h3 {
 }
 
 .projects {
+    outline: auto;
     margin: auto;
     display: grid;
     justify-content: space-evenly;
@@ -257,25 +260,21 @@ h5 {
     color: var(--bubble-gum-pink);
 }
 
-.about-section-corner {
-    position: absolute;
-    left: 72em;
-    width: 35em;
-    height: 20em;
+.about-section h4 {
+    width: fit-content;
     box-shadow: 10px -10px 0 -5px var(--tangerine-orange);
-}
-
-.skills-corner {
-    position: absolute;
-    top: 157em;
-    left: 5em;
-    width: 15em;
-    height: 20em;
-    box-shadow: -10px 10px 0 -5px var(--tangerine-orange);
+    padding: 1em 1em 0;
+    margin-top: -1em;
 }
 
 .about-description strong {
     color: var(--tangerine-orange);
+}
+
+.about-description span {
+    margin: -2em;
+    padding: 2em;
+    box-shadow: -10px 10px 0 -5px var(--tangerine-orange);
 }
 
 .skills {
@@ -302,18 +301,21 @@ h5 {
         color: var(--tangerine-orange);
     }
 
-    .contact-box {
-        position: absolute;
-        top: 185em;
-        left: 60em;
-        width: 12em;
-        height: 38em;
-        box-shadow: 10px 10px 0 -5px var(--tangerine-orange),
-                    10px -10px 0 -5px var(--tangerine-orange);
+    .contact-section h4 span {
+        justify-self: center;
+        width: fit-content;
+        padding: 1em 0 0 2em;
+        margin: -1em 0 0 -2em;
+        box-shadow: -10px -10px 0 -5px var(--tangerine-orange);
+    }
+
+    .end-icon {
+        box-shadow: 10px 10px 0 -5px var(--tangerine-orange);
+        
     }
 
     .footer-link {
-        opacity: 0.5;
+        opacity: 0.8;
         color: var(--bubble-gum-pink);
     }
 
@@ -327,23 +329,45 @@ h5 {
     }
 
 @media screen and (max-width: 350px) {
+    body {
+        margin-bottom: 0;
+    }
+     
+    .navbar-brand {
+        font-size: 1em;
+    }
+
+    .navbar-toggler {
+        width: 1.8em;
+        height: 1.4em;
+        padding: 0;
+        border-radius: 0.01;
+    }
+
+    h1 .icon {
+        box-shadow: -10px -10px 0 -7px var(--tangerine-orange);
+    }
+
     h1 {
-        font-size: 1.8em;
-        margin: 5rem 4rem 1.5rem;
+        font-size: 1.3rem;
+        margin: 3em 2em 1em;
     }
     
     h2 {
-        font-size: 4.5em;
-        margin: 0 0.5rem 1.5rem;
+        font-size: 3rem;
+        margin: 0 0.5em 1em;
     }
 
     h3 {
-        font-size: 1.8em;
-        margin: 0 4rem 3.5rem;
+        font-size: 1.3rem;
+        margin: -0.5em 1em 3.5em;
+        box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
+        margin-bottom: 0;
     }
 
     .contact-link, .about-link {
-        font-size: 1.2em;
+        font-size: 1rem;
+        padding: 0.3em;
         }
         
         
@@ -351,46 +375,135 @@ h5 {
         margin: 1em;
         padding: 1em;
     }
-        
-        h4 {
-        padding: 0.5rem;
-        font-size:2em;
-        margin: 0 auto 4rem;
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects article {
+        display: flex;
+        flex-direction: column; 
+        position: unset;
+        width: fit-content;
+        margin-bottom: -10em;
+    }
+
+    .app-descr {
+        margin: auto;
+    }
+
+    .app-descr div {
+        margin: auto;
     }
         
-    .weather-app-img {
-        max-width: 350px;
-        min-width: 225px;          
+    h4 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0 auto 4rem;
+    }
+        
+    article div:first-of-type {
+        height: 13em;
+        width: 70%;
     }
         
     h5 {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+
+    .project-1 h5, .project-4 h5 {
+        margin-top: 1em;
+    }
+
+
+    .project-2 {
+        margin-top: 1.5em;
+    }
+
+
+    .project-description, .about-description, .contact-description, .skills {
+        font-size: 1rem;
+    }
+
+    .about-section h4 {
+        box-shadow: 10px -10px 0 -7px var(--tangerine-orange);
+    }
+
+    .about-description span {
+        padding-bottom: 3em;
+        box-shadow: -10px 10px 0 -7px var(--tangerine-orange);
+    }
+
+    .contact-section h4 span {
+        box-shadow: -10px -10px 0 -7px var(--tangerine-orange);
+    }
+
+    .end-icon {
+        box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
+        
     }
 
     .email-btn {
-        font-size: 1.2em;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    footer p {
+        margin-top: 2em;
+    }
+
+    footer {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 1em;
     }
 }
 
 
-@media screen and (min-width: 350px) and (max-width: 567px) {
+@media screen and (min-width: 350px) and (max-width: 567px) {     
+    body {
+        margin-bottom: 0;
+    }
+
+    .navbar-brand {
+        font-size: 1em;
+    }
+
+    .navbar-toggler {
+        width: 1.8em;
+        height: 1.4em;
+        padding: 0;
+        border-radius: 0.01;
+    }
+
+    h1 .icon {
+        box-shadow: -10px -10px 0 -7px var(--tangerine-orange);
+    }
+
     h1 {
-        font-size: 1.8em;
-        margin: 5rem 4rem 1.5rem;
+        font-size: 1.3rem;
+        margin: 3em 2em 1em;
     }
     
     h2 {
-        font-size: 4.5em;
-        margin: 0 0.5rem 1.5rem;
+        font-size: 3rem;
+        margin: 0 0.5em 1em;
     }
 
     h3 {
-        font-size: 1.8em;
-        margin: 0 4rem 3.5rem;
+        font-size: 1.3rem;
+        margin: -0.5em 1em 3.5em;
+        box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
+        margin-bottom: 0;
     }
 
     .contact-link, .about-link {
-        font-size: 1.2em;
+        font-size: 1rem;
+        padding: 0.3em;
         }
         
         
@@ -398,26 +511,97 @@ h5 {
         margin: 1em;
         padding: 1em;
     }
-        
-        h4 {
-        padding: 0.5rem;
-        font-size:2em;
-        margin: 0 auto 4rem;
-    }
-        
-    .weather-app-img {
-        max-width: 350px;
-        min-width: 225px;          
-    }
-        
-        h5 {
-            font-size: 1.2rem;
-            padding-top: 1em;
-        }
 
-        .email-btn {
-            font-size: 1.2em;
-            }
+    .projects {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects article {
+        display: flex;
+        flex-direction: column; 
+        position: unset;
+        width: fit-content;
+        margin-bottom: -10em;
+    }
+
+    .app-descr {
+        margin: auto;
+    }
+
+    .app-descr div {
+        margin: auto;
+    }
+        
+    h4 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0 auto 4rem;
+    }
+        
+    article div:first-of-type {
+        height: 13em;
+        width: 70%;
+    }
+        
+    h5 {
+        font-size: 1rem;
+    }
+
+    .project-1 h5, .project-4 h5 {
+        margin-top: 1em;
+    }
+
+
+    .project-2 {
+        margin-top: 1.5em;
+    }
+
+
+    .project-description, .about-description, .contact-description, .skills {
+        font-size: 1rem;
+    }
+
+    .about-section h4 {
+        box-shadow: 10px -10px 0 -7px var(--tangerine-orange);
+    }
+
+    .about-description span {
+        padding-bottom: 3em;
+        box-shadow: -10px 10px 0 -7px var(--tangerine-orange);
+    }
+
+    .about-description {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .contact-section h4 span {
+        box-shadow: -10px -10px 0 -7px var(--tangerine-orange);
+    }
+
+    .end-icon {
+        box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
+        
+    }
+
+    .email-btn {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+
+    footer p {
+        margin-top: 2em;
+    }
+
+    footer {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 1em;
+    }
 }
 
 @media screen and (min-width: 567px) and (max-width: 768px) {

@@ -1,12 +1,13 @@
 :root {
     --glam-silver: #8A8D8F; 
     --reborn-beige: #FFBE98;
-    --midnight-blue: #325B74;
+    --midnight-blue: #325b74;
     --bubble-gum-pink: #E8B4C2;
     --tangerine-orange: #FF7913;
     --ebony-black: #080402;
 
-    --tangerine-orange-rgb: 255, 121, 19;
+   
+    --glam-silver-bg: #8a8d8f11;
     }
 
  /* * {
@@ -135,11 +136,16 @@ h3 {
     "p1 p1 p2 p2 p2"
     "p3 p3 p3 p4 p4"
     "p3 p3 p3 p4 p4";
-    margin-bottom: -14em; ;
+    margin-bottom: -14em; 
+    max-width: 1300px;
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+    background-color: var(--glam-silver-bg);
 }
 
 .app-descr {
-    max-width: 400px;
+    max-width: 350px;
     min-width: 250px;
     margin: 0.5em;
     text-align: center;
@@ -162,18 +168,14 @@ h4 {
     grid-area: p1;
     width: fit-content;
     position: relative;
-    left: 6em;
+    left: 4em;
 }
 
 .weather-app-img {
-    max-width: 400px;
-    min-width: 250px;
     height: 20em;
     margin: 0;
     margin-bottom: 1em;
-    box-shadow: -7px 7px var(--tangerine-orange);
     padding: 2em;
-    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
     overflow: hidden;
 }
 
@@ -184,14 +186,12 @@ h4 {
 }
 
 .mortgage-cal-img {
-    max-width: 400px;
+    max-width: 350px;
     min-width: 250px;
     height: 20em;
     margin: 0;
     margin-bottom: 1em;
-    box-shadow: -7px 7px var(--tangerine-orange);
     padding: 2em;
-    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
     overflow: hidden;
 }
 .project-2 .app-descr {
@@ -203,18 +203,16 @@ h4 {
     display: flex;
     height: fit-content;
     position: relative;
-    top: 3em;
+    top:4.5em;
 }
 
 .dessert-shopping-cart-img {
-    max-width: 400px;
+    max-width: 350px;
     min-width: 250px;
     height: 20em;
     margin: 0;
     margin-bottom: 1em;
-    box-shadow: -7px 7px var(--tangerine-orange);
     padding: 2em;
-    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
     overflow: hidden;
 }
 .project-3 .app-descr {
@@ -228,19 +226,17 @@ h4 {
     height: fit-content;
     width: fit-content;
     position: relative;
-    top: -12em;
-    left: 3em;
+    top: -13em;
+    left: 4em;
 }
 
 .bento-display-img {
-    max-width: 400px;
+    max-width: 350px;
     min-width: 250px;
     height: 20em;
     margin: 0;
     margin-bottom: 1em;
-    box-shadow: -7px 7px var(--tangerine-orange);
     padding: 2em;
-    background-color: rgba(var(--tangerine-orange-rgb), 0.05);
     overflow: hidden;
 }
 .project-3 .app-descr {
@@ -323,6 +319,10 @@ h5 {
         color: var(--reborn-beige);
     }
 
+    footer p {
+        margin-top: 2em;
+    }
+
     article {
         justify-content: center;
         align-items: center;
@@ -382,6 +382,10 @@ h5 {
         margin: 0;
         justify-content: center;
         align-items: center;
+    }
+
+    .project-1, .project-2, .project-3, .project-4 {
+        background-color: unset;
     }
 
     .projects article {

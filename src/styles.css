@@ -167,9 +167,9 @@ h4 {
 .weather-app-img {
     max-width: 350px;
     min-width: 250px;
-    height: 15em;
+    height: 14em;
     margin: auto;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     padding: 2em;
     overflow: hidden;
 }
@@ -182,7 +182,7 @@ h4 {
 .mortgage-cal-img {
     max-width: 350px;
     min-width: 250px;
-    height: 15em;
+    height: 13em;
     margin: auto;
     margin-bottom: 1em;
     padding: 2em;
@@ -197,7 +197,7 @@ h4 {
 .dessert-shopping-cart-img {
     max-width: 350px;
     min-width: 250px;
-    height: 15em;
+    height: 14em;
     margin: auto;
     margin-bottom: 1em;
     padding: 2em;
@@ -212,7 +212,7 @@ h4 {
 .bento-display-img {
     max-width: 350px;
     min-width: 250px;
-    height: 15em;
+    height: 14em;
     margin: auto;
     margin-bottom: 1em;
     padding: 2em;
@@ -295,7 +295,7 @@ h5 {
     }
 
     footer p {
-        margin-top: 2em;
+        margin: 2em 4em;
     }
 
     article {
@@ -433,7 +433,7 @@ h5 {
 
     h1 {
         font-size: 1.3rem;
-        margin: 3em 2em 1em;
+        margin: 4em 3em 1em;
     }
     
     h2 {
@@ -443,7 +443,7 @@ h5 {
 
     h3 {
         font-size: 1.3rem;
-        margin: -0.5em 1em 3.5em;
+        margin: -0.5em 3em 3.5em;
         box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
         margin-bottom: 0;
     }
@@ -471,14 +471,16 @@ h5 {
 
     .project-1, .project-2, .project-3, .project-4 {
         background-color: unset;
-        border: 2px solid var(--bubble-gum-pink);
+        border: 1px solid var(--bubble-gum-pink);
     }
 
     .projects {
         display: flex;
         flex-direction: column;
         margin-bottom: 2em;
+        margin-bottom: 2em;
         max-width: 80%;
+        align-items: center;
     }
 
     .project-description, .about-description, .contact-description, .skills {
@@ -525,46 +527,250 @@ h5 {
 }
 
 @media screen and (min-width: 567px) and (max-width: 768px) {
+    body {
+        margin-bottom: 0;
+    }
+
+    .navbar-toggler {
+        width: 2em;
+        height: 1.8em;
+        padding: 0;
+        border-radius: 0.01;
+    }
+
+    h1 .icon {
+        box-shadow: -10px -10px 0 -7px var(--tangerine-orange);
+    }
+
     h1 {
-        font-size: 2.5em;
-        margin: 6rem 8rem 2rem;
+        font-size: 1.4rem;
+        margin: 5em 3em 1em;
     }
     
     h2 {
-        font-size: 7em;
-        margin: 0 0.5rem 2rem;
+        font-size: 3.5rem;
+        margin: 0 0.5em 1em;
     }
 
     h3 {
-        font-size: 2.5em;
-        margin: 0 8rem 3.5rem;
+        font-size: 1.4rem;
+        margin: -0.5em 3em 3.5em;
+        box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
+        margin-bottom: 0;
+    }
+
+    .contact-link, .about-link {
+        font-size: 1rem;
+        padding: 0.3em;
+        margin-bottom: 2em;
+        }
+        
+        
+    .projects-section, .about-section, .contact-section {
+        margin: 1em;
+        padding: 1em;
     }
         
     h4 {
-        padding: 0.5rem;
-        font-size:2.2em;
-        margin: 0 auto 4rem;
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    margin: 0 auto 3rem;
     }
         
-     h5 {
-        font-size: 1.2rem;
+    h5 {
+        font-size: 1.5rem;
+    }
+
+    .project-1, .project-2, .project-3, .project-4 {
+        background-color: unset;
+        border: 1px solid var(--bubble-gum-pink);
     }
 
     .projects {
-        margin: auto;
-        display: grid;
-        justify-content: space-evenly;
-        gap: 1.2em;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        grid-template-areas:
-        "p1 p2"
-        "p3 p4";
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2em;
+        max-width: 80%;
+        align-items: center;
+    }
+
+    .app-descr {
+        max-width: 450px;
+        min-width: 400px;
+    }
+    
+    .weather-app-img {
+        max-width: 400px;
+        height: 18em;
+        margin-bottom: 1em;
+    }
+    
+    .mortgage-cal-img {
+        max-width: 400px;
+        height: 18em;
+    }
+    
+    .dessert-shopping-cart-img {
+        max-width: 400px;
+        height: 18em;
+    }
+
+    .bento-display-img {
+        max-width: 400px;
+        height: 18em;
+    }
+
+    .project-description, .about-description, .contact-description, .skills {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        margin-bottom: 5em;
+    }
+
+    .about-section h4 {
+        box-shadow: 10px -10px 0 -7px var(--tangerine-orange);
+    }
+
+    .about-description span {
+        padding-bottom: 3em;
+        box-shadow: -10px 10px 0 -7px var(--tangerine-orange);
+    }
+
+    .about-description {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    .contact-section h4 span {
+        box-shadow: -10px -10px 0 -7px var(--tangerine-orange);
+    }
+
+    .end-icon {
+        box-shadow: 10px 10px 0 -7px var(--tangerine-orange);
+        
     }
 
     .email-btn {
-        padding: 0.5em;           
-        margin: 1em;
-        margin-bottom: 0;
+        font-size: 1rem;
+        padding: 0.5rem;
     }
+
+    footer p {
+        margin-top: 2em;
+    }
+
+    footer {
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 1em;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    h1 {
+        font-size: 2em;
+        margin: 10rem 6rem 1rem;
+    }
+    
+    h2 {
+        font-size: 4.5rem;
+        padding: 0 0.5em;
+    }
+    
+    h3 {
+        font-size: 2em;
+        margin: 1em 3em 2em 0;
+    }
+    
+    .projects {
+    display: grid;
+    gap: 3em;
+    justify-self: center;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1 p2"
+    "p3 p4";
+    max-width: 1000px;
+    margin: 0;
+    }
+
+    .app-descr {
+        max-width: 400px;
+        min-width: 320px;
+    }
+    
+    .weather-app-img {
+        max-width: 300px;
+        margin-bottom: 1em;
+    }
+    
+    .mortgage-cal-img {
+        max-width: 300px;
+    }
+    
+    .dessert-shopping-cart-img {
+        max-width: 300px;
+    }
+
+    .bento-display-img {
+        max-width: 300px;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    h1 {
+        font-size: 2.3em;
+        margin: 10rem 5rem 1rem;
+    }
+    
+    h2 {
+        font-size: 6rem;
+        padding: 0 0.5em;
+    }
+    
+    h3 {
+        font-size: 2.3em;
+        margin: 1em 2em 2em 0;
+    }
+    
+    .projects {
+    display: grid;
+    gap: 2em;
+    justify-self: center;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1 p2 p3"
+    "p4 p4 p4";
+    max-width: 1300px;
+    margin: 0;
+    }
+
+    .app-descr {
+        max-width: 250px;
+    }
+    
+    .weather-app-img {
+        max-width: 240px;
+    }
+    
+    .mortgage-cal-img {
+        max-width: 240px;
+    }
+    
+    .dessert-shopping-cart-img {
+        max-width: 240px;
+    }
+
+    .bento-display-img {
+        max-width: 240px;
+    }
+    
 }

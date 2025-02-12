@@ -41,7 +41,8 @@ body {
     background-color: var(--ebony-black);
     text-align: center;
     margin-bottom: 3em;
-    font-family: "Metrophobic", sans-serif;
+    font-family: "Unica One", serif;
+    letter-spacing: 0.025rem;
 }
 
 body::-webkit-scrollbar {
@@ -73,6 +74,7 @@ h1 .icon {
 }
 
 h1 {
+    font-family: "Unica One", serif;
     font-size: 2.5em;
     color: var(--bubble-gum-pink);
     margin: 10rem 15rem 1rem;
@@ -93,6 +95,7 @@ h2 {
 }
 
 h3 {
+    font-family: "Unica One", serif;
     font-size: 2.5em;
     color: var(--bubble-gum-pink);
     width: fit-content;
@@ -147,7 +150,7 @@ h3 {
 }
 
 .project-description {
-    text-align: justify;
+    text-align:justify;
 }
 
 h4 {
@@ -169,7 +172,7 @@ h4 {
     min-width: 250px;
     height: 14em;
     margin: auto;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
     padding: 2em;
     overflow: hidden;
 }
@@ -220,10 +223,20 @@ h4 {
 }
 
 h5 {
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
     color: var(--tangerine-orange);
-    font-family: "Bungee Shade", sans-serif;
+    font-family: "Unica One", serif;
+}
+
+.skills {
+    font-family: "Unica One", serif;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: var(--tangerine-orange);
+    font-weight: 500;
+    font-size: 1.25rem;
 }
 
 .project-description, .about-description, .contact-description {
@@ -240,17 +253,15 @@ h5 {
 
 .about-description strong {
     color: var(--tangerine-orange);
+    font-family: "Unica One", serif;
+    font-weight: 500;
+    font-size: 2.1rem;
 }
 
 .about-description span {
     margin: -2em;
     padding: 2em;
     box-shadow: -10px 10px 0 -5px var(--tangerine-orange);
-}
-
-.skills {
-    text-align: center;
-    color: var(--tangerine-orange);
 }
 
 .email-btn {

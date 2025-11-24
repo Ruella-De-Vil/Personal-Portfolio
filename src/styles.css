@@ -1,13 +1,13 @@
 :root {
-    --glam-silver: #8A8D8F; 
-    --reborn-beige: #FFBE98;
-    --midnight-blue: #325b74;
-    --bubble-gum-pink: #E8B4C2;
-    --tangerine-orange: #FF7913;
-    --ebony-black: #080402;
+    --glam-silver: #77ffbf; 
+    --reborn-beige: #b9ff49;
+    --midnight-blue: #179b0b;
+    --bubble-gum-pink: #c0ffb8;
+    --tangerine-orange: #b8ff47;
+    --ebony-black: #000;
 
    
-    --glam-silver-bg: #8a8d8f11;
+    --glam-silver-bg: #002fff0e;
     }
 
  /* * {
@@ -64,11 +64,10 @@ main {
 }
 
 .icon {
-    color: var(--reborn-beige);
+    color: var(--midnight-blue);
 }
 
 h1 .icon {
-    color: var(--reborn-beige);
     box-shadow: -10px -10px 0 -5px var(--tangerine-orange);
     padding: 0.75em 0 0 0.75em;
 }

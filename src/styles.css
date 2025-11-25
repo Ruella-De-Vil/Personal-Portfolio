@@ -1,13 +1,20 @@
 :root {
-    --glam-silver: #77ffbf; 
+    --glam-silver: #83CCD2; 
+    --reborn-beige: #B2EAD3;
+    --midnight-blue: #E8B7CA;
+    --bubble-gum-pink: #FDFFB6;
+    --tangerine-orange: #F5F4D6;
+    --ebony-black: #000;
+
+    /*
+    --glam-silver: #75b162; 
     --reborn-beige: #b9ff49;
     --midnight-blue: #179b0b;
     --bubble-gum-pink: #c0ffb8;
     --tangerine-orange: #b8ff47;
-    --ebony-black: #000;
-
+    */
    
-    --glam-silver-bg: #002fff0e;
+    --glam-silver-bg: #83ccd21e;
     }
 
  /* * {
@@ -90,7 +97,7 @@ h2 {
     font-weight: 100;
     font-style: normal;
     letter-spacing: 0.025em;
-    text-shadow: 6px 6px var(--midnight-blue);
+    /*text-shadow: 6px 6px var(--midnight-blue);*/
 }
 
 h3 {
@@ -138,7 +145,8 @@ h3 {
 }
 
 .project-1, .project-2, .project-3, .project-4 {
-    background-color: var(--glam-silver-bg);
+    /*background-color: var(--glam-silver-bg);*/
+    box-shadow: 0 0 25px var(--glam-silver-bg);
 }
 
 .app-descr {

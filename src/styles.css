@@ -1,4 +1,5 @@
-/* CSS Variables */
+
+
 :root {
     --blue: #83CCD2; 
     --green: #B2EAD3;
@@ -6,10 +7,58 @@
     --yellow: #FDFFB6;
     --purple: #eec9f0;
     --black: #000;
+
+    /*
+    --blue: #75b162; 
+    --green: #b9ff49;
+    --pink: #179b0b;
+    --yellow: #c0ffb8;
+    --purple: #b8ff47;
+    */
+   
     --blue-bg: #83ccd21e;
+    }
+
+ /* * {
+    box-sizing: border-box;
+    background-color: rgba(31, 112, 20, 0.274) !important;
+} */
+    
+.navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Base Styles */
+.navbar-collapse {
+    box-shadow: 1px 1px 50px 1px  #b0e5fa15;
+}
+
+.navbar-brand, .nav-link{
+    color: var(--green);
+    font-family: "Bungee Shade", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    letter-spacing: 0.2em;
+    transition: transform 0.1s ease;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--yellow);
+    transform: scale(1.1);
+    transition: transform 0.1s ease;
+}
+
+.nav-btn {
+    border: none;
+    background: none;
+}
+
+.navbar-toggler {
+    color: var(--green);
+    font-size: 0.85rem;
+}
+
 body {
     background-color: var(--black);
     text-align: center;
@@ -36,88 +85,28 @@ main {
     margin: auto;
 }
 
-article {
-    justify-content: center;
-    align-items: center;
+.hero-article {
+    margin: auto;
+    max-width: 80rem;
 }
 
-/* Navigation */
-.navbar {
-    backdrop-filter: blur(10px);
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-.navbar-collapse {
-    box-shadow: 1px 1px 50px 1px #b0e5fa15;
-}
-
-.navbar-brand, .nav-link {
-    color: var(--green);
-    font-family: "Bungee Shade", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 100;
-    font-style: normal;
-    letter-spacing: 0.2em;
-    transition: transform 0.1s ease;
-}
-
-.navbar-brand:hover, .nav-link:hover {
+.icon {
     color: var(--yellow);
-    transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-.nav-btn {
-    border: none;
-    background: none;
-}
+.icon:hover {
+        transform: scale(1.5);
+        transition: transform 0.3s ease;
+        color: var(--green);
+    }
 
-.navbar-toggler {
-    color: var(--green);
-    font-size: 0.85rem;
-}
-
-/* Typography */
 h1 {
     font-family: "Unica One", serif;
     font-size: 2.5em;
     width: fit-content;
     color: var(--yellow);
-    margin: 2rem auto 0;
     text-align: left;
-}
-
-h2 {
-    font-family: "Unica One", serif;
-    font-size: 2.5em;
-    width: fit-content;
-    color: var(--yellow);
-    margin: 10rem auto 1rem;
-    text-align: right;
-    box-shadow: 7px 7px var(--purple);
-    padding: 0 1em 1em 0;
-}
-
-h3 {
-    padding: 1rem;
-    font-family: "Bungee Shade", sans-serif;
-    font-size: 3em;
-    font-weight: 100; 
-    margin: 0 auto 5rem;
-    color: var(--blue);
-}
-
-h4 {
-    font-size: 1.7rem;
-    font-weight: 600;
-    letter-spacing: 0.15rem;
-    color: var(--pink);
-    font-family: "Unica One", serif;
-}
-
-/* Hero Section */
-.hero-article {
-    margin: 5em 5em;
-    padding: 4em;
 }
 
 .hey {
@@ -125,7 +114,7 @@ h4 {
     box-shadow: -10px -10px 0 -5px var(--purple);
 }
 
-.name {
+.name{
     font-family: "Bungee Shade", sans-serif;
     font-size: 2.5rem;
     color: var(--green);
@@ -134,29 +123,40 @@ h4 {
     font-weight: 100;
     font-style: normal;
     letter-spacing: 0.025em;
+    /*text-shadow: 6px 6px var(--pink);*/
 }
 
-.cartoon-me {
-    width: 70%;
-    background: #b2ead31e;
-    box-shadow: 50px -50px 0 10px #81c3cc41;
-    box-sizing: border-box;
-    margin-top: 5rem;
+.hero-skills {
+        margin: 2rem auto;
+    }
+
+    .hero-skills .icon {
+        font-size: 3rem;
+        margin: auto;
+    }
+
+.hero-article img{
+    float: right;
+    height: 28rem;
+    margin: 0 2rem;
+    background: #63043e21;
+    box-shadow: 50px 50px 0 -20px rgba(131, 204, 210, 0.219);
 }
 
-/* Icons */
-.icon {
+h2 {
+    font-family: "Unica One", serif;
+    font-size: 2em;
+    width: fit-content;
     color: var(--yellow);
-    transition: transform 0.3s ease;
+    margin: auto;
+    text-align: right;
+    box-shadow: 7px 7px var(--purple);
+    padding: 0 1em 1em 0;
 }
 
-.icon:hover {
-    transform: scale(1.5);
-    color: var(--green);
-}
 
-/* Buttons and Links */
-.contact-link, .about-link, .email-btn {
+
+.contact-link, .about-link , .email-btn{
     text-decoration: none;
     color: var(--yellow);
     font-size: 1.5em;
@@ -171,28 +171,14 @@ h4 {
 .contact-link:hover, .about-link:hover, .email-btn:hover {
     color: var(--green);
     transform: scale(1.1);
+    transition: transform 0.3s ease;
 }
 
-.email-btn {
-    width: 12em;
-}
-
-.footer-link {
-    opacity: 0.8;
-    color: var(--yellow);
-}
-
-.footer-link:hover {
-    color: var(--green);
-}
-
-/* Sections */
-.projects-section, .about-section, .contact-section {
+.hero, .projects-section, .about-section, .contact-section {
     margin: 5em 5em;
     padding: 4em;
 }
 
-/* Projects */
 .projects {
     margin: auto;
     display: grid;
@@ -206,13 +192,14 @@ h4 {
 .project {
     box-shadow: 0 0 25px var(--blue-bg);
     transition: 0.75s ease-in-out;
-    border: 1px solid transparent;
+    border: 1px solid #0000;
 }
 
-.project:hover {
+.project:hover{
     box-shadow: none;
     transform: scale(1.1);
     border: 2px solid var(--blue);
+    transition: 0.75s ease-in-out;
 }
 
 .app-descr {
@@ -222,26 +209,45 @@ h4 {
     text-align: center;
 }
 
-.weather-app-img, .dessert-shopping-cart-img, .bento-display-img {
+.project-description {
+    text-align:justify;
+}
+
+h3 {
+    padding: 1rem;
+    font-family: "Bungee Shade", sans-serif;
+    font-size:3em;
+    font-weight: 100; 
+    margin: 0 auto 5rem;
+    color: var(--blue);
+}
+
+.weather-app-img {
     max-width: 350px;
     min-width: 250px;
     height: 14em;
-    margin: auto auto 1em auto;
+    margin: auto;
+    margin-bottom: 1em;
     padding: 2em;
     overflow: hidden;
 }
 
-.mortgage-cal-img {
+.dessert-shopping-cart-img {
     max-width: 350px;
     min-width: 250px;
-    height: 13em;
-    margin: auto auto 1em auto;
+    height: 14em;
+    margin: auto;
+    margin-bottom: 1em;
     padding: 2em;
     overflow: hidden;
 }
 
-.project-description {
-    text-align: justify;
+h4 {
+    font-size: 1.7rem;
+    font-weight: 600;
+    letter-spacing: 0.15rem;
+    color: var(--pink);
+    font-family: "Unica One", serif;
 }
 
 .skills {
@@ -253,7 +259,11 @@ h4 {
     font-size: 1.25rem;
 }
 
-/* About Section */
+.project-description, .about-description, .contact-description {
+    font-size: 1.2rem;
+    color: var(--yellow);
+}
+
 .about-section h3 {
     width: fit-content;
     box-shadow: 10px -10px 0 -5px var(--purple);
@@ -274,25 +284,34 @@ h4 {
     box-shadow: -10px 10px 0 -5px var(--purple);
 }
 
-/* Contact Section */
-.contact-icons {
-    margin: auto;
-    margin-top: 2.5rem;
-    width: fit-content;
-}
+.email-btn {
+    width: 12em;
+    }
 
-/* Text Styles */
-.project-description, .about-description, .contact-description {
-    font-size: 1.2rem;
-    color: var(--yellow);
-}
+    .contact-icons {
+        margin: auto;
+        margin-top: 2.5rem;
+        width: fit-content;
+    }
 
-/* Footer */
-footer p {
-    margin: 2em 4em;
-}
+    .footer-link {
+        opacity: 0.8;
+        color: var(--yellow);
+    }
 
-/* Media Queries */
+    .footer-link:hover {
+        color: var(--green);
+    }
+
+    footer p {
+        margin: 2em 4em;
+    }
+
+    article {
+        justify-content: center;
+        align-items: center;
+    }
+
 @media screen and (max-width: 350px) {
     body {
         margin-bottom: 0;
@@ -316,17 +335,29 @@ footer p {
 
     h1 {
         font-size: 1.3rem;
-        margin: 3em 0 1em;
+        margin: 2em 0 1em;
     }
 
     .hey {
-        padding: 0.75em 0 0 0.75em;
-        box-shadow: -10px -10px 0 -7px var(--purple);
-    }
+    padding: 0.75em 0 0 0.75em;
+    box-shadow: -10px -10px 0 -7px var(--purple);
+}
 
-    .name {
+    .name{
         font-size: 2rem;
     }
+
+    .f-e-d {
+        text-decoration: underline;
+    }
+
+    .cartoon-me {
+    width: 10rem;
+    background: #b2ead31e;
+    box-shadow: 40px -40px 0 10px #81c3cc41;
+    box-sizing: border-box;
+    margin-top: 5rem;
+}
 
     h2 {
         font-size: 1.3rem;
@@ -336,16 +367,6 @@ footer p {
         margin-bottom: 0;
     }
 
-    h3 {
-        padding: 0.5rem;
-        font-size: 1.5rem;
-        margin: 0 auto 4rem;
-    }
-        
-    h4 {
-        font-size: 1rem;
-    }
-
     .hero-skills .icon {
         margin: -0.5rem;
     }
@@ -353,7 +374,8 @@ footer p {
     .contact-link, .about-link {
         font-size: 1rem;
         padding: 0.3em;
-    }
+        }
+        
         
     .projects-section, .about-section, .contact-section {
         margin: 1em;
@@ -364,6 +386,16 @@ footer p {
         display: flex;
         flex-direction: column;
         margin-bottom: 2em;
+    }
+        
+    h3 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0 auto 4rem;
+    }
+        
+    h4 {
+        font-size: 1rem;
     }
 
     .project-description, .about-description, .contact-description, .skills {
@@ -381,7 +413,7 @@ footer p {
 
     .about-description {
         padding-bottom: 1rem;
-        box-shadow: 0 10px 0 -7px var(--purple);
+        box-shadow: 0  10px 0 -7px var(--purple);
     }
 
     .email-btn {
@@ -394,11 +426,12 @@ footer p {
     }
 
     footer {
-        margin: 0 auto;
-        font-size: 0.8rem;
-        padding: 1em;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 1em;
     }
 }
+
 
 @media screen and (min-width: 350px) and (max-width: 567px) {     
     body {
@@ -428,16 +461,6 @@ footer p {
         margin-bottom: 0;
     }
 
-    h3 {
-        padding: 0.5rem;
-        font-size: 1.5rem;
-        margin: 0 auto 4rem;
-    }
-        
-    h4 {
-        font-size: 1rem;
-    }
-
     .hero-skills {
         margin-top: 2.5rem;
     }
@@ -450,16 +473,28 @@ footer p {
     .contact-link, .about-link {
         font-size: 1rem;
         padding: 0.3em;
-    }
+        }
+        
         
     .hero-article, .projects-section, .about-section, .contact-section {
         margin: 2rem 1rem 1rem 1rem;
         padding: 1em;
     }
+        
+    h3 {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    margin: 0 auto 4rem;
+    }
+        
+    h4 {
+        font-size: 1rem;
+    }
 
     .projects {
         display: flex;
         flex-direction: column;
+        margin-bottom: 2em;
         margin-bottom: 2em;
         max-width: 80%;
         align-items: center;
@@ -476,13 +511,16 @@ footer p {
     .about-description {
         padding: 1rem;
         box-shadow: 0 10px 0 -7px var(--purple);
-        margin-left: 1em;
-        margin-right: 1em;
     }
 
     .about-description span {
         padding: 0;
         box-shadow: none;
+    }
+
+    .about-description {
+        margin-left: 1em;
+        margin-right: 1em;
     }
 
     .email-btn {
@@ -495,9 +533,9 @@ footer p {
     }
 
     footer {
-        margin: 0 auto;
-        font-size: 0.8rem;
-        padding: 1em;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 1em;
     }
 }
 
@@ -513,18 +551,28 @@ footer p {
         border-radius: 0.01;
     }
 
-    .hero-article {
-        padding: 2rem 0 0 0;
+    .cartoon-me {
+        display: inline;
+        outline: auto;
     }
 
     h1 {
         font-size: 1.4rem;
         margin: 0;
+        outline: auto;
     }
 
     .hey {
         box-shadow: -10px -10px 0 -7px var(--purple);
     }
+
+    .hero-article img{
+    float: none;
+    height: 16rem;
+    margin: 0 2rem;
+    background: #63043e21;
+    box-shadow: 30px 30px 0 -20px rgba(131, 204, 210, 0.219);
+}
 
     h2 {
         font-size: 1.4rem;
@@ -533,25 +581,26 @@ footer p {
         margin-bottom: 0;
     }
 
-    h3 {
-        padding: 0.5rem;
-        font-size: 1.8rem;
-        margin: 0 auto 3rem;
-    }
-        
-    h4 {
-        font-size: 1.5rem;
-    }
-
     .contact-link, .about-link {
         font-size: 1rem;
         padding: 0.3em;
         margin-bottom: 2em;
-    }
+        }
+        
         
     .projects-section, .about-section, .contact-section {
         margin: 1em;
         padding: 1em;
+    }
+        
+    h3 {
+    padding: 0.5rem;
+    font-size: 1.8rem;
+    margin: 0 auto 3rem;
+    }
+        
+    h4 {
+        font-size: 1.5rem;
     }
 
     .projects {
@@ -567,13 +616,13 @@ footer p {
         min-width: 400px;
     }
     
-    .weather-app-img, .dessert-shopping-cart-img, .bento-display-img {
+    .weather-app-img {
         max-width: 400px;
         height: 18em;
         margin-bottom: 1em;
     }
     
-    .mortgage-cal-img {
+    .dessert-shopping-cart-img {
         max-width: 400px;
         height: 18em;
     }
@@ -590,14 +639,18 @@ footer p {
         box-shadow: 10px -10px 0 -7px var(--purple);
     }
 
+    .about-description span {
+        padding-bottom: 3em;
+        box-shadow: -10px 10px 0 -7px var(--purple);
+    }
+
     .about-description {
         margin-left: 1em;
         margin-right: 1em;
     }
 
-    .about-description span {
-        padding-bottom: 3em;
-        box-shadow: -10px 10px 0 -7px var(--purple);
+    .contact-section h3 span {
+        box-shadow: -10px -10px 0 -7px var(--purple);
     }
 
     .email-btn {
@@ -610,22 +663,26 @@ footer p {
     }
 
     footer {
-        margin: 0 auto;
-        font-size: 0.8rem;
-        padding: 1em;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    padding: 1em;
     }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    .hero-article {
+    .hero, .projects-section, .about-section, .contact-section {
+        margin: 2em;
+        padding: 2em;
+    }
+    
+    .hero-article{
         padding: 0;
     }
     
     h1 {
         font-size: 2em;
-        margin: 10rem auto 1rem;
+        margin:5rem auto 1rem;
     }
-
     h2 {
         font-size: 2em;
         margin: 1em auto 0;
@@ -633,15 +690,18 @@ footer p {
     }
     
     .projects {
-        display: grid;
-        gap: 3em;
-        justify-self: center;
-        justify-content: space-between;
-        justify-items: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        max-width: 1000px;
-        margin: 0;
+    display: grid;
+    gap: 3em;
+    justify-self: center;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1 p2"
+    "p3 p4";
+    max-width: 1000px;
+    margin: 0;
     }
 
     .app-descr {
@@ -649,43 +709,57 @@ footer p {
         min-width: 320px;
     }
     
-    .weather-app-img, .dessert-shopping-cart-img, .bento-display-img, .mortgage-cal-img {
+    .weather-app-img {
         max-width: 300px;
         margin-bottom: 1em;
     }
+    
+    .dessert-shopping-cart-img {
+        max-width: 300px;
+    }
+    
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
     h1 {
         font-size: 2.3em;
         margin: 5rem auto 1rem;
-        width: 100%;
+        width: 100%
     }
     
     h2 {
         font-size: 2.3em;
         margin: 1em 2em 2em 0;
         padding: 0 2rem 2rem 0;
-        width: 100%;
+        width: 100%
+
     }
     
     .projects {
-        display: grid;
-        gap: 2em;
-        justify-self: center;
-        justify-content: space-between;
-        justify-items: center;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
-        max-width: 1300px;
-        margin: 0;
+    display: grid;
+    gap: 2em;
+    justify-self: center;
+    justify-content: space-between;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas:
+    "p1 p2 p3"
+    "p4 p4 p4";
+    max-width: 1300px;
+    margin: 0;
     }
 
     .app-descr {
         max-width: 250px;
     }
     
-    .weather-app-img, .dessert-shopping-cart-img, .bento-display-img, .mortgage-cal-img {
+    .weather-app-img {
         max-width: 240px;
     }
+    
+    .dessert-shopping-cart-img {
+        max-width: 240px;
+    }
+    
 }

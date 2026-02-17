@@ -211,7 +211,7 @@ h2 {
   display: grid;
   justify-content: space-evenly;
   gap: 2em;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   max-width: 1440px;
 }
@@ -245,6 +245,8 @@ h2 {
 
 .project-description {
   text-align: justify;
+  font-size: 0.9rem;
+  color: var(--yellow);
 }
 
 h3 {
@@ -285,7 +287,6 @@ h4 {
   font-size: 1.25rem;
 }
 
-.project-description,
 .about-description,
 .contact-description {
   font-size: 1.2rem;
